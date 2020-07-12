@@ -1,0 +1,24 @@
+.task {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+.complete {
+    text-decoration: line-through;
+}
+
+.todo-list {
+
+}
+
+.app-container {
+    display: flex;
+    justify-content: center;
+}
+
+.todo-app-container {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
