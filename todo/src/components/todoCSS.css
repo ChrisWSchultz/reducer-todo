@@ -1,18 +1,26 @@
-.task {
-    font-family: sans-serif;
+.button {
+    margin-bottom: 2vw;
+    padding: 1vw 2vw;
+}
+
+.button-wrapper {
     display: flex;
     justify-content: center;
 }
 
-.complete {
-    text-decoration: line-through;
+.form {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    border-radius: 5px;
 }
 
-.todo-list {
-
+.form-input {
+    font-size: 2rem;
 }
 
 .app-container {
+    box-sizing: border-box;
     display: flex;
     justify-content: center;
 }
@@ -21,4 +29,22 @@
     display: flex;
     flex-direction: column;
     align-content: center;
+}
+
+.task {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    background-color: #FAFAFA;
+}
+
+.task-detail {
+    font-size: 1.6rem;
+}
+
+.complete {
+    color: #FAFAFA;
+    background-color: #b4b4b4;
 }

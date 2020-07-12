@@ -11,7 +11,7 @@ const TodoDetail = (props) => {
 
     return(
         <div key={props.task.id} className={props.task.completed ? 'task complete' : 'task'} onClick={toggleTask}>
-            <p>{ props.task.item }</p>
+            <p className="task-detail">{ props.task.item }</p>
         </div>
     );
 };

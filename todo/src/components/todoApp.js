@@ -12,21 +12,23 @@ const TodoApp = (props) => {
         e.preventDefault();
         let payload = { item: e.target.task.value, completed: false, id: Date.now() }
         dispatch({type: "ADD_TASK", payload: payload});
-    }
+    };
 
     const toggleTask = (task) => {
         dispatch({type: "TOGGLE_TASK", payload: task});
-    }
+    };
 
     const clearComplete = (e) => {
         e.preventDefault();
         dispatch({type: "CLEAR_COMPLETE"});
-    }
+    };
 
     return(
       <div className="todo-app-container">
           <TodoForm addTask={addTask} />
-          <button onClick={clearComplete}>Clear Completed</button>
+          <div className="button-wrapper">
+              <button className="button" onClick={clearComplete}>Clear Completed</button>
+          </div>
           <TodoList todoList={todo.todoList} toggleTask={toggleTask} />
       </div>
     );

@@ -3,13 +3,10 @@ import React from "react";
 const TodoForm = (props) => {
     return(
         <div>
-            <form onSubmit={props.addTask}>
-                <label>
-                    Task:
-                    <input name="task"/>
-                </label>
+            <form className="form" onSubmit={props.addTask}>
+                <input className="form-input" placeholder="Todo Task Name" name="task"/>
 
-                <button type="submit">Add Task</button>
+                <button className="button" type="submit">Add Task</button>
             </form>
         </div>
     );
